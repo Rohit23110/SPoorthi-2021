@@ -1,0 +1,137 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spoorthi'20 - Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="icon" href="{% static 'images/logo.png' %}">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%} ">
+    <link rel="stylesheet" href="{% static 'css/common.css'%}">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css'%}"> -->
+    <style>
+        header {
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        #googleMap {
+            width: 100%;
+            height: 400px;
+        }
+
+        img {
+            box-shadow: none;
+        }
+
+        main {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#231F20;">
+   <nav class="navbar navbar-expand-lg navbar-dark fill">
+        <div class="container">
+            <a href="{% url 'home' %}" class="navbar-brand" style="color:white;">Sports @ S.P.I.T.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"  id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Spoorthi
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'events' %}">Spoorthi</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="sponsors.html">Sponsors</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="{% url 'gallery' %}">A Glimpse Of Past Years</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'new' %}">What's New</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container text-center">
+        <h1 style="color:#CFFFB3;">Register</h1>
+    </header>
+<main class="container">
+        <form method="POST" action="{% url 'register' %}"  id="form">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="imputEvent" style="color:#CFFFB3; font-size: 36px;">Select event</label>
+                <select name="inputEvent" id="inputEvent" class="form-control">
+                    <option value="box-cricket">Box Cricket</option>
+                    <option value="rink-football">Rink Football</option>
+                    <option value="tug-of-war">Tug of War</option>
+                    <option value="kabadi">Kabadi</option>
+                    <option value="kho-kho">Kho Kho</option>
+                    <option value="football">Football</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="volleyball-girls">Volleyball (Girls)</option>
+                    <option value="volleyball-boys">Volleyball (Boys)</option>
+                    <option value="basketball-boys">Basketball (Boys)</option>
+                    <option value="basketball-girls">Basketball (Girls)</option>
+                    <option value="chess">Chess</option>
+                    <option value="carrom">Carrom</option>
+                    <option value="table-tennis">Table Tennis</option>
+                    <option value="throwball">Throwball</option>
+                    <option value="athletics">Athletics</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputName" style="color:#CFFFB3; font-size: 36px;">Full Name</label>
+                <input type="text" class="form-control" name="inputName" aria-describedby="nameHelp" placeholder="Enter name" required>
+                <small id="nameHelp" class="form-text text-muted" style="color:white!important; font-size: 26px;">For team events, mention the name of the captain.</small>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" style="color:#CFFFB3; font-size: 36px;">Email address</label>
+                <input type="email" class="form-control" name="inputEmail" aria-describedby="emailHelp" placeholder="Enter email address"
+                    required>
+                <small id="emailHelp" class="form-text text-muted" style="color:white!important; font-size: 26px;">We'll never share your email with anyone else. 😉</small>
+            </div>
+            <div class="form-group">
+                <label for="inputNumber" style="color:#CFFFB3; font-size: 36px;">Contact number</label>
+                <input type="text" class="form-control" name="inputNumber" placeholder="Enter contact number" required>
+            </div>
+            <div class="form-group">
+                <label for="inputCollege" style="color:#CFFFB3; font-size: 36px;">College</label>
+                <input type="text" class="form-control" name="inputCollege" placeholder="Enter college" required>
+            </div>
+            <div class="form-group">
+                <label for="inputDescription" style="color:#CFFFB3; font-size: 36px;">Description</label>
+                <textarea class="form-control" name="inputDescription" placeholder="Details like team members, etc. For atheletics, mention the format."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-size: 30px;">Submit</button>
+        </form>
+    </main>
+    <footer style="background-color:#231F20;">
+        <h3 style="color:#CFFFB3;">Made with
+        <span style="color: red">❤</span> by Sports Committee @ Sardar Patel Institute of Technology</h3>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}" ></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

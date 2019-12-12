@@ -1,0 +1,134 @@
+{% load static from staticfiles %}
+<html>
+<head>
+  <title>Spoorthi'20 Contacts</title>
+  <link rel="icon" href="{% static 'images/logo.png' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  <!-- <link rel="stylesheet" href="{% static 'css/contact.css' %}"> -->
+  <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+<!--   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='css/text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}"> -->
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+<!-- <script src="https://use.fontawesome.com/20ab91acc4.js"></script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark fill">
+        <div class="container">
+            <a href="{% url 'home' %}" class="navbar-brand" style="color:white;">Sports @ S.P.I.T.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"  id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Spoorthi
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="sponsors.html">Sponsors</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'events' %}">Spoorthi</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="{% url 'gallery' %}">A Glimpse Of Past Years</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'new' %}">What's New</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+  <section id="contact">
+    <h1 class="section-header" style="color:#93E5AB;">CONTACT</h1>
+    <div class="contact-wrapper">
+      <!-- <div class="form-horizontal">
+        <li class="list-item" style="color:#D6F599; font-size: 26px;"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:9769132344" style="color:#D6F599; font-size: 26px!important;">Sunit Vaidya:9769132344</a></span></i></li>
+        <li class="list-item" style="color:#D6F599; font-size: 26px;"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:9757195561" style="color:#D6F599; font-size: 26px!important;">Krisha Choksi:9757195561</a></span></i></li>
+
+      </div>  -->   
+      <br>
+        <!-- <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item" style="color:#D6F599; font-size: 26px;"><i class="fa fa-map-marker fa-2x"><span class="contact-text place " style="color:#D6F599; font-size: 26px;">Bhartiya Vidhya Bhavan Sardar Patel Institute Of Technology,Munshi Nagar,Andheri | Mumbai</span></i></li>  
+            <li class="list-item" style="color:#D6F599; font-size: 26px;"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:spoorthi@spit.ac.in" title="Send us an email" style="color:#D6F599; font-size: 36px;">sports@spit.ac.in</a></span></i></li>
+          </ul>
+
+          <hr> -->
+         <!--  <ul class="social-media-list">
+            <li><a href="https://m.facebook.com/SPoorthiSPIT/?referrer=ig_side_tray&funlid=pKvNSZKzJqB52QGA&_rdr" class="contact-icon">
+              <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/spoorthi_spit/" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+          </ul> -->
+          <hr>
+        </div>
+      <!-- <i class="fa fa-facebook" style="font-size:48px;"><a href ="https://m.facebook.com/SPoorthiSPIT/?referrer=ig_side_tray&funlid=pKvNSZKzJqB52QGA&_rdr"></a></i> -->
+    <!-- </div> -->
+    <i class="fa fa-facebook" style="font-size:48px; color:#231F20;"><a href ="https://m.facebook.com/SPoorthiSPIT/?referrer=ig_side_tray&funlid=pKvNSZKzJqB52QGA&_rdr"></a></i>
+    <main class="container">
+        <div class="row">
+            <div class="col-md">
+                <p style="color:#D6F599!important; font-size: 26px!important;">
+                    <span class="glyphicon glyphicon-phone" style="color:#D6F599!important; font-size: 26px!important;"></span> 
+                Sunit Vaidya: 9769132344</p>
+                <p style="color:#D6F599!important; font-size: 26px!important;">
+                    <span class="glyphicon glyphicon-phone" style="color:#D6F599!important; font-size: 26px!important;"></span>
+                Krisha Choksi: 9372293221</p>
+                <p style="color:#D6F599; font-size: 26px;">
+                    <span class="glyphicon glyphicon-map-marker"></span> Sardar Patel Institute of Technology,<br>Munshi Nagar, Andheri (West)<br> Mumbai - 400 058
+                </p>
+                <p style="color:#D6F599; font-size: 30px;">
+                 Send Us Email : <a href="mailto:spoorthi@spit.ac.in" title="Send us an email" style="color:#D6F599; font-size: 30px;">sports@spit.ac.in</a>
+                </p>
+                <p>
+                  <a href="https://m.facebook.com/SPoorthiSPIT/?referrer=ig_side_tray&funlid=pKvNSZKzJqB52QGA&_rdr" class="contact-icon" style="color:#D6F599; font-size: 20px;">
+                  Like Us On Facebook For Further Updates</a>
+                </p>
+                <p>
+                  <a href="https://www.instagram.com/spoorthi_spit/" class="contact-icon" style="color:#D6F599; font-size: 20px;">
+                  Follow Us On Instagram: spoorthi_spit</a>
+                </p>
+                <!-- <div id="footer">
+                    <a href="https://www.facebook.com/events/261253394535596/" target="_blank">
+                        Like us on Facebook for regular updates
+                    </a>
+                </div> -->
+            </div>
+            <div class="col-md">
+                <img src="{% static 'images/logo1.png' %}"></img>
+            </div>
+        </div>
+    </main>
+  </section> 
+  <!-- <i class="fa fa-facebook" style="font-size:48px; color:#231F20;"><a href ="https://m.facebook.com/SPoorthiSPIT/?referrer=ig_side_tray&funlid=pKvNSZKzJqB52QGA&_rdr"></a></i> -->
+  <footer style="background-color:#231F20;">
+        <h3 style="color:#CFFFB3;">Made with
+        <span style="color: red">❤</span> by Sports Committee @ Sardar Patel Institute of Technology</h3>
+    </footer>
+  <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</html>
+  
+  

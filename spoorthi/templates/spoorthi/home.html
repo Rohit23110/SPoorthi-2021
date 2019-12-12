@@ -1,0 +1,246 @@
+{% load static from staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SPoorthi'20</title>
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/classy-nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+</head>
+<body>
+    <!-- ##### Preloader ##### -->
+    <!-- <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div> -->
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="fitness-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="fitnessNav">
+                        <!-- Nav brand -->
+                        <!-- <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a> -->
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="{% url 'home' %}">Sports @ S.P.I.T</a></li>
+                                    <li><a href="{% url 'events' %}">SPoorthi</a></li>
+                                    <li><a href="{% url 'new' %}">What's New</a></li>
+                                    <!-- <li><a href="sponsors.html">Sponsors</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                    <li><a href="{% url 'gallery' %}">A Glimpse Of Past Years</a></li>
+                                    <li><a href="{% url 'register' %}">Register</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+
+            <!-- Single Hero Slide -->
+            <div class="single-slide bg-img" style="background-image: url({% static 'images/spoorthi3.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">SPoorthi</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide bg-img" style="background-image: url({% static 'images/spoorthi4.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">AGILITY</h2>
+                                <!-- <a href="#" class="btn fitness-btn wel-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide bg-img" style="background-image: url({% static 'images/marathon.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">MARATHON</h2>
+                                <!-- <a href="#" class="btn fitness-btn wel-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide bg-img" style="background-image: url({% static 'images/cyclothon.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">SPIT CYCLOTHON</h2>
+                                <h3 data-animation="fadeInUp" data-delay="100ms">(Coming Soon)</h3>
+                               <!--  <a href="#" class="btn fitness-btn wel-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="middle">
+        <h1 style="color:white; font-size:96px!important;">COMING SOON</h1>
+        <hr>
+        <p id="demo" style="font-size:56;"></p>
+     </div>
+     <div class="fitness-adds-area">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Add Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-add-area mt-100">
+                        <a href="#"><img src="{% static 'images/spit.jpg' %}" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Single Add Area -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-add-area mt-100">
+                        <a href="#"><img src="{% static 'images/newspaper.jpg'%}" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="about-us-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h6 style="color:#CFFFB3; font-size: 48px;">Sports @ S.P.I.T</h6>
+                        <h2 style="color:white;">What We Have For You</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <!-- About Text -->
+                        <div class="col-12 col-lg-6" style="color:#CFFFB3!important; font-size:48px!important;">
+                            <div class="about-text" style="color:#CFFFB3!important; font-size:48px!important;">
+                                <p>SPoorthi is the sports fest organized by Sardar Patel Institute Of Technology which brings together thousands of individuals across Mumbai and other cities to compete amongst each other and be the best. The series of sports events organized at SPoorthi aim at challenging the skills of an individual thus boosting it and mainly keeping the sportsmanspirit within us ALIVE. The fire within should never burn out is what is the motto of this fest.</p>
+                              </div>
+                        </div>
+                        <!-- About Text -->
+                        <div class="col-12 col-lg-6">
+                            <div class="about-text" style="color:#CFFFB3!important; font-size:48px!important;">
+                                <p>SPIT Marathon is the most sensational sport event of the college. It's a 5km long marathon starting from Juhu beach till our College.</p>
+                            </div>
+                        </div>
+                        <!-- About Button Group -->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="about-thumb">
+                        <img src="{% static 'img/bg-img/man.png'%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--  <div class = "roller">
+        <img src="http://www.webtutorialplus.com/Images/css-effects-image/roll-ball.png" alt="Football" />
+    </div> -->
+    <div class="timeline">
+        <div class="containers left">
+            <div class="contents">
+                <h2 style="font-size: 36px!important;">Register</h2>
+                <p style="font-size: 24px!important;">Choose your favorite events and register for them</p>
+            </div>
+        </div>
+        <div class="containers right">
+            <div class="contents">
+               <h2 style="font-size: 36px!important;">Spoorthi</h2>
+                <p style="font-size: 24px!important;">13-31st January</p>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+    <!-- Live Chat Code :: Start of Tawk.to Script -->
+</body>
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("Jan 13, 2020 ").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<footer style="padding:30px; text-align: center;">
+        <h3 style="color:#CFFFB3;">Made with
+        <span style="color: red">❤</span> by Sports Committee @ Sardar Patel Institute of Technology</h3>
+</footer>
+</html>

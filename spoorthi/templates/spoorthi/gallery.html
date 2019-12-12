@@ -1,0 +1,107 @@
+{% load static from staticfiles %}
+<html>
+<head>
+	<title>SPoorthi'20-Gallery</title>
+	<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark fill">
+        <div class="container">
+            <a href="{% url 'home' %}" class="navbar-brand" style="color:white;">Sports @ S.P.I.T.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"  id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Spoorthi
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="sponsors.html">Sponsors</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="{% url 'events' %}">Spoorthi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'new' %}">What's New</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- <div class="heading">
+ 	<h2 style="color:white!important;">SPoorthi Over The Past Years</h2>
+ </div> -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="heading">
+    <h2 style="color:#CFFFB3!important; text-align: center; ">SPoorthi Over The Past Years</h2>
+ </div>
+<div class="row">
+  <div class="column">
+    <img src="{% static 'gallery/1.jpg' %}">
+    <img src="{% static 'gallery/2.jpg' %}">
+    <img src="{% static 'gallery/3.jpg' %}">
+    <img src="{% static 'gallery/4.jpg' %}">
+    <img src="{% static 'gallery/5.jpg' %}">
+    <img src="{% static 'gallery/6.jpg' %}">
+    <img src="{% static 'gallery/7.jpg' %}">
+  </div>
+  <div class="column">
+    <img src="{% static 'gallery/8.jpg' %}">
+    <img src="{% static 'gallery/9.jpg' %}">
+    <img src="{% static 'gallery/10.jpg' %}">
+    <img src="{% static 'gallery/11.jpeg' %}">
+    <!-- <img src="{% static 'gallery/12.HEIC' %}"> -->
+    <img src="{% static 'gallery/13.JPG' %}">
+    <img src="{% static 'gallery/1.jpg' %}">
+  </div>
+  <div class="column">
+    <img src="{% static 'gallery/17.JPG' %}">
+    <img src="{% static 'gallery/15.jpg' %}">
+    <img src="{% static 'gallery/16.jpg' %}">
+    <img src="{% static 'gallery/14.jpg' %}">
+    <img src="{% static 'gallery/18.jpg' %}">
+    <img src="{% static 'gallery/2.jpg' %}">
+    <img src="{% static 'images/spoorthi4.jpg' %}">
+  </div>
+  <div class="column">
+    <img src="{% static 'images/spoorthi3.jpg' %}">
+    <img src="{% static 'images/spoorthi5.jpg' %}">
+    <img src="{% static 'images/spoorthi4.jpg' %}">
+    <img src="{% static 'images/spoorthi2.jpg' %}">
+    <img src="{% static 'images/spoorthi6.jpg' %}">
+    <img src="{% static 'images/spoorthi1.jpg' %}">
+  </div>
+</div>
+<br>
+<footer style="background-color: #231F20;">
+        <h3 style="color:#CFFFB3;">Made with
+        <span style="color: red">❤</span> by Sports Committee @ Sardar Patel Institute of Technology</h3>
+</footer>
+  <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</html>
+</body>
+</html>

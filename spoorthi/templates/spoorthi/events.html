@@ -1,0 +1,485 @@
+{% load static from staticfiles %}
+<html lang="en">
+
+<head>
+    <title>Spoorthi'20 - Events</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="icon" href="/static/images/logo.png">
+    <!-- Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" >
+    <!-- <link rel="stylesheet" href="../../css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous"> -->
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}"/>
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
+    <style>
+        img {
+            padding: 10px;
+        }
+
+        header {
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        .box__title-inner{
+            font-size: 3rem;
+        }  
+</style>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark fill">
+        <div class="container">
+            <a href="{% url 'home' %}" class="navbar-brand" style="color:white;">Sports @ S.P.I.T.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"  id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Spoorthi
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="sponsors.html">Sponsors</a> -->
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'new' %}">What's New</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="{% url 'gallery' %}">A Glimpse Of Past Years</a>
+                    </li>
+                   <!--  <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'new' %}">What's New</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div class="content">
+            <div class="grid">
+                <a class="grid__item" href="#preview-1" onclick="setTimeout(()=>{document.getElementById('reg1').style.opacity=1;document.getElementById('reg1').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Cricket.png'%}" alt="Some image"/>
+                        <h3 class="box__title"><span class="box__title-inner" data-hover="CRICKET" style="color:green">CRICKET</span></h3>
+                        <h4 class="box__text"><span class="box__text-inner" style="color:green">Googly</span></h4>
+                        <!-- <div class="box__deco">&#10014;</div> -->
+                        <!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-2" onclick="setTimeout(()=>{document.getElementById('reg2').style.opacity=1;document.getElementById('reg2').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Football.png' %}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" data-hover="FOOTBALL">FOOTBALL</span></h3>
+                        <h4 class="box__text box__text--topcloser"><span class="box__text-inner box__text-inner--rotated1"style="color:green">Goal</span></h4>
+                        <!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-3" onclick="setTimeout(()=>{document.getElementById('reg3').style.opacity=1;document.getElementById('reg3').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Box_cricket.png' %}" alt="Some image"/>
+                        <h3 class="box__title"><span class="box__title-inner" data-hover="BOX  CRICKET">BOX<span style="color:black;border-color:black;-webkit-text-stroke: black;font-size:30px;">_</span>CRICKET</span></h3>
+                        <h4 class="box__text box__text--topcloser"><span class="box__text-inner"style="color:green">Out</span></h4>
+                        <!-- <div class="box__deco">&#10032;</div> -->
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-13" onclick="setTimeout(()=>{document.getElementById('reg13').style.opacity=1;document.getElementById('reg13').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Kho-Kho_1.png' %}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner" data-hover="KHO-KHO">KHO-KHO</span></h3>
+                        <h4 class="box__text box__text--bottom "><span class="box__text-inner box__text-inner--rotated3"style="color:green">Mud</span></h4>
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-5" onclick="setTimeout(()=>{document.getElementById('reg5').style.opacity=1;document.getElementById('reg5').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Volleyball.jpg' %}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner" data-hover="VOLLEYBALL">VOLLEYBALL</span></h3>
+                        <h4 class="box__text box__text--bottomcloser"><span class="box__text-inner"style="color:green">Jump</span></h4>
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-6" onclick="setTimeout(()=>{document.getElementById('reg6').style.opacity=1;document.getElementById('reg6').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Throwball.png' %}" alt="Some image"/>
+                        <h3 class="box__title"><span class="box__title-inner" data-hover="THROWBALL">THROWBALL</span></h3>
+                        <h4 class="box__text"><span class="box__text-inner"style="color:green">Fast</span></h4>
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-7" onclick="setTimeout(()=>{document.getElementById('reg7').style.opacity=1;document.getElementById('reg7').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/TableTennis.png' %}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" data-hover="TABLE  TENNIS">TABLE<span style="color:white;border-color:white;-webkit-text-stroke: white;font-size:30px;">_</span>TENNIS</span></h3>
+                        <h4 class="box__text "><span class="box__text-inner box__text-inner--rotated1"style="color:green">Life</span></h4>
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-8" onclick="setTimeout(()=>{document.getElementById('reg8').style.opacity=1;document.getElementById('reg8').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Chess.png' %}" alt="Some image"/>
+                        <h3 class="box__title"><span class="box__title-inner" data-hover="CHESS">CHESS</span></h3>
+                        <h4 class="box__text box__text--bottom"><span class="box__text-inner"style="color:green">Bust</span></h4>
+                        <!-- <div class="box__deco">&#10108;</div> -->
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-9" onclick="setTimeout(()=>{document.getElementById('reg9').style.opacity=1},1200);document.getElementById('reg9').style.zIndex=1001;">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Carrom.png' %}" alt="Some image"/>
+                        <h3 class="box__title"><span class="box__title-inner" data-hover="CARROM">CARROM</span></h3>
+                        <h4 class="box__text box__text--bottom"><span class="box__text-inner"style="color:green">Queen</span></h4>
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-10" onclick="setTimeout(()=>{document.getElementById('reg10').style.opacity=1;document.getElementById('reg10').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/RinkFootball.png' %}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="size:20px" data-hover="RINK  FOOTBALL">RINK<span style="color:white;border-color:white;-webkit-text-stroke: white;font-size:30px;">_</span>FOOTBALL</span></h3>
+                        <h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2"style="color:green">Rust</span></h4>
+                        <!-- <p class="box__content">"Call it a hurricane or call it freedom, Frank"</p> -->
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-11" onclick="setTimeout(()=>{document.getElementById('reg11').style.opacity=1;document.getElementById('reg11').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/TugOfWar.png'%}" alt="Some image"/>
+                        <h3 class="box__title"><span class="box__title-inner" data-hover="TUG  OF  WAR">TUG<span style="color:white;border-color:white;-webkit-text-stroke: white;font-size:30px;">_</span>OF<span style="color:white;border-color:white;-webkit-text-stroke: white;font-size:30px;">_</span>WAR</span></h3>
+                        <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3"style="color:green">Force</span></h4>
+                        <!-- <div class="box__deco box__deco--top">&#10153;</div> -->
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-12" onclick="setTimeout(()=>{document.getElementById('reg12').style.opacity=1;document.getElementById('reg12').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Kabaddi.png'%}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner" data-hover="KABADDI">KABADDI</span></h3>
+                        <h4 class="box__text box__text--bottom "><span class="box__text-inner box__text-inner--rotated3"style="color:green">Mud</span></h4>
+                        <!-- <div class="box__deco box__deco--top">&#10153;</div> -->
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-14">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-14" onclick="setTimeout(()=>{document.getElementById('reg14').style.opacity=1;document.getElementById('reg14').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/Athletics.png'%}" alt="Some image"/>
+                        <h3 class="box__title"><span class="box__title-inner" data-hover="ATHLETICS">ATHLETICS</span></h3>
+                        <h4 class="box__text"><span class="box__text-inner"style="color:green">Fast</span></h4>
+                        <p class="box__content">
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="overlay__reveal"></div>
+            <div class="overlay__item" id="preview-1">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Cricket.png'%}" alt="Some image"/>
+                    <h3 class="box__title"><span class="box__title-inner">CRICKET</span></h3>
+                    <h4 class="box__text"><span class="box__text-inner">Googly</span></h4>
+                    <!-- <div class="box__deco">&#10014;</div> -->
+                </div>
+                <p class="overlay__content">Cricket is a most precarious profession; it is called a team game but, in fact, no one is so lonely as a batsman facing a bowler supported by ten fieldsmen and observed by two umpires to ensure that his error does not go unpunished.<br/>
+                        <br/>
+                        <b>Organising head -</b><br/>
+                        Darsh : 9820211596<br/>
+                        Yug : 9819137272<br/><br/>
+                       <!--  Dates : 02-01-2019 to 14-01-2019<br/>
+                        Timing : 7:00 am- 6:00 pm<br/> -->
+
+                        </p>
+            </div>
+            <div class="overlay__item" id="preview-2">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Football.png'%}" alt="Some image"/>
+                    <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">FOOTBALL</span></h3>
+                    <h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Goal</span></h4>
+                    <!-- <div class="box__deco box__deco--top">&#10115;</div> -->
+                </div>
+                <p class="overlay__content">
+                        The game of football is a lot like life. Tackle ur problems, block your fears and capitalise on your opportunities to score . So use this opportunity to showcase your talents in football.<br/>
+                        <br/>
+                        <b>Organising head -</b><br/>
+                        Yash Shah : 9819554512<br/>
+                        Shashank Patel :9987263054<br/>
+                        <!-- Ritvik : 82910 92823<br/><br/> -->
+                        <!-- Dates : 10-01-2019 to 12-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>    
+            </div>
+            <div class="overlay__item" id="preview-3">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Box_cricket.png'%}" alt="Some image"/>
+                    <h3 class="box__title"><span class="box__title-inner">BOX_CRICKET</span></h3>
+                    <h4 class="box__text box__text--topcloser"><span class="box__text-inner">Out</span></h4>
+                    <!-- <div class="box__deco">&#10032;</div> -->
+                </div>
+                <p class="overlay__content">
+                    Shoot to thrill! <br/>
+                    A gun is no more dangerous than a cricket bat in the hands of a madman. So bring out the cricket in you and outplay everyone to be announced as the next Box Cricket Champions.<br/>
+                    <br/>
+                    <!-- <b>Organizing Head -</b><br/> -->
+                    <!-- Sanket Andhale: 9987510423<br/>
+                    Prathamesh Dalvi: 7039370236<br/><br/> -->
+                   <!--  Dates : 2-01-2019 to 4-01-2019<br/>
+                    Timing : 9:00 am- 5:00 pm<br/>
+                </p> -->
+            </div>
+            <div class="overlay__item" id="preview-5">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Volleyball.jpg'%}" alt="Some image"/>
+                    <h3 class="box__title"><span class="box__title-inner">VOLLEYBALL</span></h3>
+                    <h4 class="box__text box__text--bottomcloser"><span class="box__text-inner">Jump</span></h4>
+                </div>
+                <p class="overlay__content">In just a few short seconds I’m going to show down, throw down, and otherwise knock you down
+                    with a barrage of amazing spikes, blocks, and digs, and show you what volleyball is all about. Well if
+                    you have that spirit then do join us at Spoorthi for a game of volleyball<br/>
+                    <br/>
+                    <b>Organizing Head -</b><br/>
+                    Naveen : 9769687986<br/>
+                    Shravani: 9326455492 <br/><br/>
+                  <!--   Dates: 07-01-2019 to 09-01-2019<br/>
+                    Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-6">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Throwball.png'%}" alt="Some image"/>
+                    <h3 class="box__title"><span class="box__title-inner">THROWBALL</span></h3>
+                    <h4 class="box__text"><span class="box__text-inner">Fast</span></h4>
+                </div>
+                <p class="overlay__content">
+                        Well, if you've got the agility and reflexes to catch and throw a ball in 3 secs, then gather your team for a game of Throwball.<br/>
+                        <br/>
+                        <b>Organizing Head -</b><br/>
+                        Shivangi : 8451024736<br/>
+                        Chaitya : 9920451635<br/><br/>
+                        <!-- Dates: 11-01-2019 to 12-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-7">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/TableTennis.png' %}" alt="Some image"/>
+                    <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">TABLE TENNIS</span></h3>
+                    <h4 class="box__text box__title--bottom"><span class="box__text-inner box__text-inner--rotated1">Life</span></h4>
+                </div>
+                <p class="overlay__content">
+                        Hola people,<br/>
+                        Show us your Ping Pong skills drop in as solo or duo.<br/>
+                        <br/>
+                        <b>Organising head -</b><br/>
+                        Yash : 7506180093<br/> 
+                        Jaiesh: 9004804803<br/>
+                        <!-- Jeet mishra : 8976720511<br/>
+                        Parth Jardosh : 9987140311<br/><br/> -->
+                        <!-- Dates: 06-01-2019 to 09-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-8">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Chess.png' %}" alt="Some image"/>
+                    <h3 class="box__title"><span class="box__title-inner">CHESS</span></h3>
+                    <h4 class="box__text box__text--bottom"><span class="box__text-inner">Bust</span></h4>
+                    <!-- <div class="box__deco">&#10108;</div> -->
+                </div>
+                <p class="overlay__content">
+                        Hola amigos✌🏼, <br/>
+                        Wake up your strategic minds cuz the game of minds is here🏅 CHESS 🏅<br/>   
+                        <br/>
+                        <b>Organising head -</b><br/>
+                        Archis: 9619686115 <br/>
+                        Tanvi: 7559378790<br/> <br/>
+                        <!-- Dates: 05-01-2019 to 05-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/>  -->     
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-9">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Carrom.png' %}" alt="Some image"/>
+                    <h3 class="box__title"><span class="box__title-inner">CARROM</span></h3>
+                    <h4 class="box__text box__text--bottom"><span class="box__text-inner">Queen</span></h4>
+                </div>
+                <p class="overlay__content">
+                        The game is all about your coordination between Mind and fingers, let's see who grabs the Queen and wins the pockets for his/her side.<br/>
+                        <br/>
+                        <b>Organising head -</b><br/>
+                        Parth : 8452811501<br/>
+                        Yash : 9820091791<br/>
+                       <!--  Mandar Vaingankar : 9769734237<br/>
+                        Omkar : 9637883226<br/><br/> -->
+                      <!--   Dates: 02-01-2019 to 05-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-10">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/RinkFootball.png'%}" alt="Some image"/>
+                    <h3 class="box__title box__title--bottom"><span class="box__title-inner">RINK FOOTBALL</span></h3>
+                    <h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2">Rust</span></h4>
+                </div>
+                <p class="overlay__content">
+                        Not a pro at football, we have you covered, we have rink football for you and your buddies<br/>
+                        <br/>
+                        <b>Organizing head -</b><br/>
+                         Yash Shah : 9819554512<br/>
+                        Shashank Patel :9987263054<br/>
+                       <!--  Dates: 07-01-2019 to 07-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-11">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/TugOfWar.png'%}" alt="Some image"/>
+                    <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner">TUG OF WAR</span></h3>
+                    <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">Force</span></h4>
+                    <!-- <div class="box__deco box__deco--top">&#10153;</div> -->
+                </div>
+                <p class="overlay__content">Hola amigos✌🏼,<br/>
+                        Now is time to bring on the most energetic and popular event of SPIT : TUG OF WAR💪🏻🕶<br/>
+                        <br/>
+                       <!--  <b>Organizing head -</b><br/>
+                        Preet Dabre : 7507220452<br/>
+                        Krishna Choksi : 9757195561<br/><br/> -->
+                        <!-- Dates: 07-01-2019 to 07-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-12">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Kabaddi.png'%}" alt="Some image"/>
+                    <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner">KABADDI</span></h3>
+                    <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">Mud</span></h4>
+                    <!-- <div class="box__deco box__deco--top">&#10153;</div> -->
+                </div>
+                <p class="overlay__content">
+                        Are you a raider?<br/>
+                        If yes then display those raiding skills on the kabaddi mat and revive one of your teammates to get to the winning line.<br/>                        
+                        <br/>
+                        <b>Organizing head -</b><br/>
+                        Nitin Mishra : 8828254509<br/>
+                        Omkar Thopate : 9699830659<br/>
+                        Vaibhav Waghe : 918975454296<br/><br/>
+                       <!--  Dates: 10-01-2019 to 10-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                    </p>
+            </div>
+            <div class="overlay__item" id="preview-13">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Kho-Kho_1.png' %}" alt="Some image"/>
+                    <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner">KHO-KHO</span></h3>
+                    <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">Mud</span></h4>
+                    <!-- <div class="box__deco box__deco--top">&#10153;</div> -->
+                </div>
+                <p class="overlay__content">
+                        Wanna relive those good old days, join us with your tolii for an exhilarating game of kho kho .<br/>
+                        <br/>
+                        <b>Organizing head -</b><br/>
+                        Ritik Singh: 8652807739<br/>
+                        Shubham Kejriwal : 7045533046<br/><br/>
+                        <!-- Dates: 05-01-2019 to 05-01-2019<br/>
+                        Timing : 9:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <div class="overlay__item" id="preview-14">
+                <div class="box">
+                    <div class="box__shadow"></div>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Athletics.png'%}" alt="Some image"/>
+                    <h3 class="box__title"><span class="box__title-inner">ATHLETICS</span></h3>
+                    <h4 class="box__text"><span class="box__text-inner">Fast</span></h4>
+                </div>
+                <p class="overlay__content">
+                        Salut people, have a nack of running and jumping and you think it can take you places, then join us at Spoorthi to display your athletic skills<br/>
+                        <br/>
+                        Organizing head -<br/>
+                        Hashwardhan: 7738436673<br/>
+                        Pranjal : 9987426817 <br/>  
+                        <!-- Tirth : 9821675495<br/><br/> -->
+                        <!-- Dates: 07-01-2019 to 07-01-2019<br/>
+                        Timing : 8:00 am- 5:00 pm<br/> -->
+                </p>
+            </div>
+            <button class="overlay__close" style="margin-top:3rem!important; color:white!important; font-size: 36px;" ><i class="fa fa-close" style="color:white!important;"></i></button>
+            <!-- <a href="{% url 'events' %}" style="color:white;">Close</a> -->
+            <a id="reg1" href="{% url 'register' %}"> register here</a>
+            <a id="reg2" href="{% url 'register' %}" target="_blank" > register here </a>
+            <a id="reg3" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg4" href="{% url 'register' %}"> register here</a>
+            <a id="reg5" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg6" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg7" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg8" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg9"> register here</a>
+            <a id="reg10" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg11" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg12" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg13" href="{% url 'register' %}" target="_blank"> register here</a>
+            <a id="reg14" href="{% url 'register' %}" target="_blank" style="opacity:0;"> register here</a>
+        </div>
+    </main>
+      
+
+    <footer style="background-color:#231F20;">
+        <h3 style="color:#CFFFB3;">Made with
+        <span style="color: red">❤</span> by Sports Committee @ Sardar Patel Institute of Technology</h3>
+    </footer>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'js/TweenMax.min.js'%}"></script>
+        <script src="{% static 'js/demo.js'%}"></script>
+        <script src="{% static 'js/jquery-3.2.1.slim.min.js'%}"></script>
+        <script src="{% static 'js/popper.min.js'%}"></script>
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+</body>
+
+</html>
