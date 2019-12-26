@@ -115,20 +115,21 @@
                         <!-- <div class="box__deco">&#10032;</div> -->
                     </div>
                 </a>
-                <a class="grid__item" href="#preview-13" onclick="setTimeout(()=>{document.getElementById('reg13').style.opacity=1;document.getElementById('reg13').style.zIndex=1001;},1200);">
-                    <div class="box">
-                        <div class="box__shadow"></div>
-                        <img class="box__img" src="{% static 'images/poster/Kho-Kho_1.png' %}" alt="Some image"/>
-                        <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner" data-hover="KHO-KHO">KHO-KHO</span></h3>
-                        <h4 class="box__text box__text--bottom "><span class="box__text-inner box__text-inner--rotated3"style="color:green">Mud</span></h4>
-                    </div>
-                </a>
                 <a class="grid__item" href="#preview-5" onclick="setTimeout(()=>{document.getElementById('reg5').style.opacity=1;document.getElementById('reg5').style.zIndex=1001;},1200);">
                     <div class="box">
                         <div class="box__shadow"></div>
                         <img class="box__img" src="{% static 'images/poster/Volleyball.jpg' %}" alt="Some image"/>
                         <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner" data-hover="VOLLEYBALL">VOLLEYBALL</span></h3>
                         <h4 class="box__text box__text--bottomcloser"><span class="box__text-inner"style="color:green">Jump</span></h4>
+                    </div>
+                </a>
+                <a class="grid__item" href="#preview-10" onclick="setTimeout(()=>{document.getElementById('reg10').style.opacity=1;document.getElementById('reg10').style.zIndex=1001;},1200);">
+                    <div class="box">
+                        <div class="box__shadow"></div>
+                        <img class="box__img" src="{% static 'images/poster/RinkFootball.png' %}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="size:20px" data-hover="RINK  FOOTBALL">RINK<span style="color:white;border-color:white;-webkit-text-stroke: white;font-size:30px;">_</span>FOOTBALL</span></h3>
+                        <h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2"style="color:green">Rust</span></h4>
+                        <!-- <p class="box__content">"Call it a hurricane or call it freedom, Frank"</p> -->
                     </div>
                 </a>
                 <a class="grid__item" href="#preview-6" onclick="setTimeout(()=>{document.getElementById('reg6').style.opacity=1;document.getElementById('reg6').style.zIndex=1001;},1200);">
@@ -164,13 +165,12 @@
                         <h4 class="box__text box__text--bottom"><span class="box__text-inner"style="color:green">Queen</span></h4>
                     </div>
                 </a>
-                <a class="grid__item" href="#preview-10" onclick="setTimeout(()=>{document.getElementById('reg10').style.opacity=1;document.getElementById('reg10').style.zIndex=1001;},1200);">
+                <a class="grid__item" href="#preview-13" onclick="setTimeout(()=>{document.getElementById('reg13').style.opacity=1;document.getElementById('reg13').style.zIndex=1001;},1200);">
                     <div class="box">
                         <div class="box__shadow"></div>
-                        <img class="box__img" src="{% static 'images/poster/RinkFootball.png' %}" alt="Some image"/>
-                        <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" style="size:20px" data-hover="RINK  FOOTBALL">RINK<span style="color:white;border-color:white;-webkit-text-stroke: white;font-size:30px;">_</span>FOOTBALL</span></h3>
-                        <h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2"style="color:green">Rust</span></h4>
-                        <!-- <p class="box__content">"Call it a hurricane or call it freedom, Frank"</p> -->
+                        <img class="box__img" src="{% static 'images/poster/Kho-Kho_1.png' %}" alt="Some image"/>
+                        <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner" data-hover="KHO-KHO">KHO-KHO</span></h3>
+                        <h4 class="box__text box__text--bottom "><span class="box__text-inner box__text-inner--rotated3"style="color:green">Mud</span></h4>
                     </div>
                 </a>
                 <a class="grid__item" href="#preview-11" onclick="setTimeout(()=>{document.getElementById('reg11').style.opacity=1;document.getElementById('reg11').style.zIndex=1001;},1200);">
@@ -269,7 +269,7 @@
             <div class="overlay__item" id="preview-5">
                 <div class="box">
                     <div class="box__shadow"></div>
-                    <img class="box__img box__img--original" src="{% static 'images/poster/Volleyball.jpg'%}" alt="Some image"/>
+                    <img class="box__img box__img--original" src="{% static 'images/poster/Volleyball.png'%}" alt="Some image"/>
                     <h3 class="box__title"><span class="box__title-inner">VOLLEYBALL</span></h3>
                     <h4 class="box__text box__text--bottomcloser"><span class="box__text-inner">Jump</span></h4>
                 </div>
@@ -460,12 +460,12 @@
             <a id="reg6" href="{% url 'register' %}" target="_blank"> register here</a>
             <a id="reg7" href="{% url 'register' %}" target="_blank"> register here</a>
             <a id="reg8" href="{% url 'register' %}" target="_blank"> register here</a>
-            <a id="reg9"> register here</a>
+            <a id="reg9" href="{% url 'register' %}"> register here</a>
             <a id="reg10" href="{% url 'register' %}" target="_blank"> register here</a>
             <a id="reg11" href="{% url 'register' %}" target="_blank"> register here</a>
             <a id="reg12" href="{% url 'register' %}" target="_blank"> register here</a>
             <a id="reg13" href="{% url 'register' %}" target="_blank"> register here</a>
-            <a id="reg14" href="{% url 'register' %}" target="_blank" style="opacity:0;"> register here</a>
+            <a id="reg14" href="{% url 'register' %}" target="_blank"> register here</a>
         </div>
     </main>
       
