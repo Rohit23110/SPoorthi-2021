@@ -220,7 +220,7 @@ img {
       right: 0; } }
 
 /* :: 3.7.0 ScrollUp */
-#scrollUp {
+/*#scrollUp {
   background: #b6e358;
   background: -webkit-linear-gradient(to right, #b6e358, #38b143);
   background: linear-gradient(to right, #b6e358, #38b143);
@@ -237,7 +237,7 @@ img {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
   #scrollUp:hover {
-    background-color: #141414; }
+    background-color: #141414; }*/
 
 /* :: 3.8.0 Fitness Button */
 .fitness-btn {
@@ -423,7 +423,7 @@ img {
       font-size: 14px;
       margin-bottom: 40px;
       color: #ffffff; }
-  .hero-slides .owl-prev,
+  /*.hero-slides .owl-prev,
   .hero-slides .owl-next {
     width: 95px;
     height: 45px;
@@ -492,7 +492,7 @@ img {
       font-weight: 700;
       margin-right: 10px; }
       .hero-slides .owl-dots .owl-dot.active {
-        color: #38b143; }
+        color: #38b143; }*/
 .roller
 {
     width: 800px;
