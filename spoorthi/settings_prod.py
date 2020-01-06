@@ -28,10 +28,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*uymh#rbnu=zek08-!qs2gyqsos+qwf0oc4vn++5_#2(+&xy00'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','172.16.10.54','sports.spit.ac.in',]
-
 
 # Application definition
 
@@ -79,12 +78,18 @@ WSGI_APPLICATION = 'spoorthi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':  'sportsdb',
+        'USER': 'sportsdb',
+        'PASSWORD': 'sportsdb@spit#',
+        'HOST': 'localhost',
+        'PORT':''
     }
 }
+
 
 
 # Password validation
@@ -123,6 +128,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static'),]
+LOGIN_REDIRECT_URL = '/accounts/'
+
+STATIC_URL='/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
+
+'''
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "accounts/static"),
+)
+'''
+
+
+
+# Override production variables if DJANGO_DEVELOPMENT env variable is set
+if os.environ.get('DJANGO_DEVELOPMENT') is not None:
+    from settings_dev import * 
