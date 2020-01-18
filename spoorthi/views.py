@@ -21,6 +21,9 @@ def gallery(request):
 
 def new(request):
 	return render(request,'spoorthi/new.html')
+    
+def sponsor(request):
+    return render(request,'spoorthi/sponsors.html')
 
 def register(request):
     # return render(request,'blog.html')

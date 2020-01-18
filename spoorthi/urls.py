@@ -27,6 +27,7 @@ urlpatterns = [
     path('gallery/',views.gallery,name="gallery"),
     path('whats-new/',views.new,name="new"),
     path('register/',views.register,name="register")
+    path('sponsors/',views.sponsor,name="sponsor")
 ]
 
 urlpatterns += staticfiles_urlpatterns()
