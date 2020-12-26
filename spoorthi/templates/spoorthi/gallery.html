@@ -53,40 +53,40 @@
 <div class="row">
   <div class="column">
     <img src="{% static 'gallery/1.jpg' %}">
-    <img src="{% static 'images/spoorthi3.jpg' %}">
-    <img src="{% static 'gallery/3.jpg' %}">
-    <img src="{% static 'gallery/4.jpg' %}">
-    <img src="{% static 'gallery/5.jpg' %}">
-    <img src="{% static 'gallery/6.jpg' %}">
-    <img src="{% static 'gallery/7.jpg' %}">
+    <img class="lazy" data-src="{% static 'images/spoorthi3.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/3.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/4.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/5.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/6.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/7.jpg' %}">
   </div>
   <div class="column">
-    <img src="{% static 'gallery/8.jpg' %}">
-    <img src="{% static 'gallery/9.jpg' %}">
-    <img src="{% static 'gallery/10.jpg' %}">
-    <img src="{% static 'gallery/11.jpeg' %}">
+    <img  src="{% static 'gallery/8.jpg' %}">
+    <img  class="lazy" data-src="{% static 'gallery/9.jpg' %}">
+    <img  class="lazy" data-src="{% static 'gallery/10.jpg' %}">
+    <img  class="lazy" data-src="{% static 'gallery/11.jpeg' %}">
     <!-- <img src="{% static 'gallery/12.HEIC' %}"> -->
-    <img src="{% static 'gallery/13.jpg' %}">
-    <img src="{% static 'gallery/1.jpg' %}">
+    <img  class="lazy" data-src="{% static 'gallery/13.jpg' %}">
+    <img  class="lazy" data-src="{% static 'gallery/1.jpg' %}">
   </div>
   <div class="column">
     <img src="{% static 'gallery/17.jpg' %}">
-    <img src="{% static 'gallery/15.jpg' %}">
-    <img src="{% static 'gallery/16.jpg' %}">
-    <img src="{% static 'gallery/14.jpg' %}">
-    <img src="{% static 'gallery/18.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/15.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/16.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/14.jpg' %}">
+    <img class="lazy" data-src="{% static 'gallery/18.jpg' %}">
     <!-- <img src="{% static 'gallery/2.jpg' %}"> -->
-    <img src="{% static 'images/spoorthi4.jpg' %}">
+    <img class="lazy" data-src="{% static 'images/spoorthi4.jpg' %}">
   </div>
   <div class="column">
     <img src="{% static 'images/spoorthi3.jpg' %}">
-    <img src="{% static 'images/spoorthi5.jpg' %}">
-    <img src="{% static 'images/spoorthi4.jpg' %}">
-    <img src="{% static 'images/spoorthi2.jpg' %}">
-    <img src="{% static 'images/spoorthi6.jpg' %}">
-    <img src="{% static 'images/spoorthi1.jpg' %}">
+    <img class="lazy" data-src="{% static 'images/spoorthi5.jpg' %}">
+    <img class="lazy" data-src="{% static 'images/spoorthi4.jpg' %}">
+    <img class="lazy" data-src="{% static 'images/spoorthi2.jpg' %}">
+    <img class="lazy" data-src="{% static 'images/spoorthi6.jpg' %}">
+    <img class="lazy" data-src="{% static 'images/spoorthi1.jpg' %}">
   </div>
-</div>
+</div> 
 <br>
 <footer style="background-color: #231F20;">
         <h3 style="color:#CFFFB3;">Made with
@@ -101,6 +101,7 @@
     <script src="{% static 'js/plugins/plugins.js' %}"></script>
     <!-- Active js -->
     <script src="{% static 'js/active.js' %}"></script>
+    <script src="{% static 'js/lazy_load_functions.js' %}"></script>
 </html>
 </body>
 </html>
