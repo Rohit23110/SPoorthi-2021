@@ -1,3 +1,4 @@
+
 (function ($) {
     'use strict';
 
@@ -144,5 +145,7 @@
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
+
+   
 
 })(jQuery);

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Spoorthi'20 - Register</title>
+    <title>Spoorthi'21 - Register</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,28 +45,23 @@
             </button>
             <div class="collapse navbar-collapse"  id="navbarNav">
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="#">Spoorthi
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'events' %}">Spoorthi</a>
+                        <a class="nav-link " href="{% url 'home' %}">SPoorthi</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link "  href="{% url 'new' %}">What's New</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link" href="sponsors.html">Sponsors</a> -->
+                        <a class="nav-link font-italic bg-success" href="{% url 'register' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                        <a class="nav-link" href="{% url 'gallery' %}">Past Years</a>
+                   </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="{% url 'gallery' %}">A Glimpse Of Past Years</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  href="{% url 'new' %}">What's New</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  href="{% url 'sponsor' %}">Sponsors</a>
+                        <a class="nav-link" href="{% url 'sponsor' %}">Sponsors</a>
                     </li>
 
                 </ul>
