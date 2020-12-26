@@ -93,5 +93,4 @@ venv/
 .idea/
 
 settings_secret.py
-static/
 
